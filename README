@@ -1,0 +1,88 @@
+Milestones Map React Native App
+A React Native app to search, add, and display milestones on a map with route visualization. Uses LocationIQ API for place search and react-native-maps for map rendering.
+
+Features
+Search places with LocationIQ API (autocomplete).
+
+Add selected places as milestones.
+
+View milestones on an interactive map with markers.
+
+Display route line connecting milestones.
+
+Remove milestones with validation (minimum 3, maximum 10).
+
+Debounced search to reduce API calls.
+
+Clean and user-friendly UI.
+
+Screenshots
+(Add screenshots or GIFs of your app here if possible)
+
+Installation
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/milestones-map.git
+cd milestones-map
+Install dependencies:
+
+bash
+Copy
+Edit
+npm install
+Add your LocationIQ API key in the source code (App.tsx):
+
+ts
+Copy
+Edit
+const LOCATIONIQ_API_KEY = 'your_locationiq_api_key';
+Run the app:
+
+bash
+Copy
+Edit
+npx expo start
+or
+
+bash
+Copy
+Edit
+npm start
+Usage
+Use the search input to find places.
+
+Tap on a search result to add it as a milestone.
+
+View your milestones list below the search.
+
+Remove milestones by tapping the "Remove" button.
+
+See all milestones and route on the map.
+
+Dependencies
+React Native
+
+Expo
+
+react-native-maps
+
+axios
+
+Notes
+The map centers on the first added milestone.
+
+Maximum 10 milestones can be added.
+
+Minimum 3 milestones must be present to allow removal.
+
+Estimated duration per milestone is fixed at 30 minutes (customize as needed).
+
+LocationIQ API is used for place search. Get your API key at https://locationiq.com.
+
+License
+This project is licensed under the MIT License.
+
+---karri lokesh---
